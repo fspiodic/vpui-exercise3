@@ -16,6 +16,9 @@ module.exports = {
   allUserNames: function(data) {
     // Takes an array of user objects and returns an array of user names.
     // --> ["Bob Damato", "Greg Hoch", "Ralph Peterson", "Toby Morris", "Darek Rossman", "Ken Pace", "Fahrudin Spiodic", "Lynn Johnson"]
+	var names = userData.map(function(n) {
+		return n.name;
+		});
   },
  
   allDeveloperNames: function(data) {
@@ -41,4 +44,4 @@ module.exports = {
 function filterUserNames(userData, filterFn) {
   // Takes an array of user objects and a custom filtering function
   // and returns an array of user names. This is like the `getNames`
-  // function, except instead of returning all names, it should filter
+}
